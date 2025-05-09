@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "XlP2ivHmKdn9lNUz7CdJg2nQIuoQj2U3CvTiVm9WKbQ=",
+  "Source": "RentMate.API",
+  "BasePath": "_content/RentMate.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RentMate.API\\wwwroot",
+      "Source": "RentMate.API",
+      "ContentRoot": "C:\\Users\\Safie\\OneDrive\\Desktop\\frint\\RentMate.API\\wwwroot\\",
+      "BasePath": "_content/RentMate.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
