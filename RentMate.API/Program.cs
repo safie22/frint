@@ -79,6 +79,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Register services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPropertyService, PropertyService>();
+builder.Services.AddScoped<IProposalService, ProposalService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<ISavedPropertyService, SavedPropertyService>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<IReportService, ReportService>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<IContractService, ContractService>();
+builder.Services.AddScoped<IPropertyViewService, PropertyViewService>();
 
 var app = builder.Build();
 

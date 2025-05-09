@@ -119,9 +119,9 @@ namespace RentMate.API.Services
                 .ToListAsync();
         }
 
-        public async Task IncrementViewCountAsync(int id)
+        public async Task IncrementViewCountAsync(int propertyId)
         {
-            var property = await _context.Properties.FindAsync(id);
+            var property = await _context.Properties.FindAsync(propertyId);
             if (property != null)
             {
                 property.ViewCount++;

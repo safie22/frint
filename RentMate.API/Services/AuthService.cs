@@ -60,7 +60,7 @@ namespace RentMate.API.Services
                         Email = user.Email,
                         FirstName = user.FirstName,
                         LastName = user.LastName,
-                        Role = user.Role
+                        Role = user.Role.ToString()
                     }
                 };
             }
@@ -85,7 +85,7 @@ namespace RentMate.API.Services
                     Email = request.Email,
                     FirstName = request.FirstName,
                     LastName = request.LastName,
-                    Role = request.Role,
+                    Role = Enum.Parse<UserRole>(request.Role, true),
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                     CreatedAt = DateTime.UtcNow,
                     IsApproved = request.Role == "Tenant" // Auto-approve tenants
@@ -162,7 +162,7 @@ namespace RentMate.API.Services
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role),
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 

@@ -4,12 +4,12 @@ namespace RentMate.API.Services
 {
     public interface IProposalService
     {
-        Task<Proposal> CreateProposalAsync(Proposal proposal, IFormFile file = null);
-        Task<Proposal> GetProposalByIdAsync(int id);
+        Task<Proposal> CreateProposalAsync(Proposal proposal);
+        Task<Proposal?> GetProposalByIdAsync(int id);
         Task<IEnumerable<Proposal>> GetProposalsByPropertyIdAsync(int propertyId);
         Task<IEnumerable<Proposal>> GetProposalsByTenantIdAsync(int tenantId);
-        Task<bool> AcceptProposalAsync(int id);
-        Task<bool> RejectProposalAsync(int id);
-        Task<bool> DeleteProposalAsync(int id);
+        Task<Proposal> UpdateProposalStatusAsync(int id, ProposalStatus status);
+        Task DeleteProposalAsync(int id);
+        Task<bool> HasActiveProposalAsync(int propertyId, int tenantId);
     }
 } 

@@ -15,6 +15,6 @@ namespace RentMate.API.Services
         Task SavePropertyAsync(int propertyId, int userId);
         Task UnsavePropertyAsync(int propertyId, int userId);
         Task<IEnumerable<Property>> GetSavedPropertiesAsync(int userId);
-        Task IncrementViewCountAsync(int id);
+        Task IncrementViewCountAsync(int propertyId);
     }
 } 

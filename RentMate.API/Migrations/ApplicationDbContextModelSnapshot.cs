@@ -52,7 +52,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.Message", b =>
@@ -88,7 +88,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("SenderId");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Messages", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.Notification", b =>
@@ -128,7 +128,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.Property", b =>
@@ -182,7 +182,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("LandlordId");
 
-                    b.ToTable("Properties");
+                    b.ToTable("Properties", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.PropertyImage", b =>
@@ -207,7 +207,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("PropertyImages");
+                    b.ToTable("PropertyImages", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.Proposal", b =>
@@ -252,7 +252,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("Proposals");
+                    b.ToTable("Proposals", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.SavedProperty", b =>
@@ -273,7 +273,7 @@ namespace RentMate.API.Migrations
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("SavedProperties");
+                    b.ToTable("SavedProperties", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.User", b =>
@@ -315,7 +315,7 @@ namespace RentMate.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("RentMate.API.Models.Comment", b =>
