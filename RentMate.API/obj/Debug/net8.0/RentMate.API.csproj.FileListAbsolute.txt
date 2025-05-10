@@ -8,6 +8,7 @@ C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\RentMate.API
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\RentMate.API.runtimeconfig.json
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\RentMate.API.dll
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\RentMate.API.pdb
+C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\RentMate.API.xml
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
@@ -141,6 +142,7 @@ C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\staticwebass
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\RentMate.6F97ACB8.Up2Date
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\RentMate.API.dll
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\refint\RentMate.API.dll
+C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\RentMate.API.xml
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\RentMate.API.pdb
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\RentMate.API.genruntimeconfig.cache
 C:\Users\Safie\OneDrive\Desktop\frint\RentMate.API\obj\Debug\net8.0\ref\RentMate.API.dll

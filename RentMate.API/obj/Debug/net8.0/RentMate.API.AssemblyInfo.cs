@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentMate.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+576dee1b06ad76ece1315395a18bc41055460cbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61e617acc82c1e5a1492f37f384aba818cd30e95")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentMate.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentMate.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

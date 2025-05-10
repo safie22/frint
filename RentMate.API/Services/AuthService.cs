@@ -85,10 +85,16 @@ namespace RentMate.API.Services
                     Email = request.Email,
                     FirstName = request.FirstName,
                     LastName = request.LastName,
-                    Role = Enum.Parse<UserRole>(request.Role, true),
+                    Role = request.Role.ToLower() switch
+                    {
+                        "admin" => UserRole.Admin,
+                        "landlord" => UserRole.Landlord,
+                        "tenant" => UserRole.Tenant,
+                        _ => throw new ArgumentException("Invalid role. Must be one of: Admin, Landlord, Tenant")
+                    },
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                     CreatedAt = DateTime.UtcNow,
-                    IsApproved = request.Role == "Tenant" // Auto-approve tenants
+                    IsApproved = request.Role.ToLower() == "tenant" // Auto-approve tenants
                 };
 
                 _context.Users.Add(user);
